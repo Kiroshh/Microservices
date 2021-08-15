@@ -20,6 +20,6 @@ before_install:
   - echo 'dockerhub credentials configured'
 
 script:
-  - docker-compose -f ./docker-compose-build.yml build --parallel
+  - docker-compose -f docker-compose-build.yml build --parallel
   - docker-compose push
 
